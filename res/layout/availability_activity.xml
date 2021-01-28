@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2f2d2b"
+    tools:context=".AvailabilityActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="#808080"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservas Activas"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"/>
+
+</LinearLayout>

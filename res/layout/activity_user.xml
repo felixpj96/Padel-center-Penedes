@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="#2f2d2b"
+    tools:context=".UserActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <ImageButton
+            android:id="@+id/IBreservaPista"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_weight="30"
+            android:background="@drawable/reservapista" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:background="#808080"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualidad"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvActualidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:divider="@android:color/black"
+            android:dividerHeight="2dp"/>
+
+</LinearLayout>
